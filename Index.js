@@ -1,10 +1,10 @@
 document.addEventListener('keydown', (event) => {
     let KeyName = event.key;
-    const regex = /[asdfghjASDFGHJ]/g;
+    const regex = /[qsdfghjzetyuQSDFGHJZETYU]/g;
     if (KeyName.match(regex) !== null) {
         switch (KeyName) {
-            case "a":
-            case "A":
+            case "q":
+            case "Q":
                 let audioA = new Audio("white_keys/A.mp3");
                     audioA.play();
                 break;
@@ -37,8 +37,32 @@ document.addEventListener('keydown', (event) => {
             case "J":
                 let audioJ = new Audio("white_keys/J.mp3");
                 audioJ.play();
+                break
+            case "z":
+            case "Z":
+                let audioW = new Audio("black_keys/W.mp3");
+                audioW.play();
                 break;
-
+            case "e":
+            case "E":
+                let audioE = new Audio("black_keys/E.mp3");
+                audioE.play();
+                break;
+            case "t":
+            case "T":
+                let audioT = new Audio("black_keys/T.mp3");
+                audioT.play();
+                break;
+            case "y":
+            case "Y":
+                let audioY = new Audio("black_keys/Y.mp3");
+                audioY.play();
+                break;
+            case "u":
+            case "U":
+                let audioU = new Audio("black_keys/U.mp3");
+                audioU.play();
+                break;
         }
 
     } else {

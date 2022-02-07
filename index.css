@@ -1,21 +1,58 @@
-.container
-{
+body {
+    background: url("Images/Background.PNG") no-repeat center center/100%;
+}
+.container {
     display: flex;
     height: 78vh;
-    width: 60vw;
+    width: 68vw;
     margin: 76px auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }
-kbd
-{
+.white-keys kbd{
+    z-index: 1;
     display: inline-block;
     height: 78vh;
     width: 9vw;
     background: white;
     border: solid;
     text-align: center;
-    line-height: 75vh;
+    line-height: 110vh;
+    font-size: 80px;
+
 }
-body {
-    /*background-color: chocolate;*/
-    background: url("Images/Background.PNG") no-repeat center center/100%;
+.white-keys {
+    display: flex;
+}
+.black-keys {
+    display: flex;
+    position: relative;
+    bottom: 93%;
+    z-index: 2;
+    width: 65vw;
+    justify-content: space-around;
+}
+.black-keys kbd {
+    width: 4vw;
+    background: black;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 32vh;
+    font-size: 40px;
+}
+.black-keys kbd:first-child{
+    margin-left: 5%;
+}
+.black-keys kbd:nth-child(2){
+    margin-left: 2%;
+}
+.black-keys kbd:nth-child(3){
+    margin-left: 17%;
+}
+.black-keys kbd:nth-child(4){
+    margin-left: 2%;
+}
+.black-keys kbd:last-child{
+    margin-right: 6%;
 }
