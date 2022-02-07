@@ -1,0 +1,22 @@
+.container
+{
+    display: flex;
+    border: dotted red;
+    height: 78vh;
+    width: 60vw;
+    margin: 76px auto;
+}
+kbd
+{
+    border: red;
+    display: inline-block;
+    height: 78vh;
+    width: 9vw;
+    background: white;
+    border: solid;
+    text-align: center;
+    line-height: 75vh;
+}
+body {
+    background: url("Images/Background.PNG") no-repeat center center/100%;
+}
